@@ -1,0 +1,148 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>阿伦的音乐播放器</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type ="text/css" href="css/player.css">
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script src="js/player.js"></script>
+</head>
+<body>
+	<div class = "blur">
+	<canvas id = "canvas"></canvas>
+	</div>
+
+	<div class="playerMain">
+
+		<div class="top">
+		<a href="#" class="logo">Music grab</a>
+			<div class="search">
+				<form id = "search-input-form">
+					<input name="pages" id="pages" type="text" value="1" hidden>
+					<div class ="searchBtn" id = "searchBtn"></div>
+					<input type="text" class="searchTxt" name="name" id="searchTxt" value="Batman">	
+				</form>
+			</div>
+
+			<div class="mainNav">
+			<a href="blog.alarea1.com" class="myblog" target="_blank">阿伦的blog</a>
+			</div>
+		</div>
+
+		<div class=middle>
+		<div class="mainWrap">
+			<div class="leftBar">
+				<ul class="menuUL">
+					<li class="menuLi cur">
+					<a herf="#">
+					<i class="icon iplay"></i>
+					在线播放
+					</a>
+					</li>
+					<li class="menuLi cannotclick">
+					<a herf="#">
+					<i class="icon ihst"></i>
+					历史播放
+					</a>
+					</li>
+					<li class="menuLi cannotclick">
+					<a herf="#">
+					<i class="icon ishouc"></i>
+					我的收藏
+					</a>
+					</li>
+				</ul>
+		
+					<audio id="audio" src=""></audio>
+			</div>
+			<div class="mainBody">
+				<div class="playHd">
+				<div class="phInner">
+					<div class="col">歌曲</div>
+					<div class="col">歌手</div>
+					<div class="col">专辑</div>
+					</div>
+					</div>
+				<div class="playBd">
+						<div class="scrollView">
+							<ul class="songUL" id="musicList">
+
+								<li class="songList loadmoreRemove"><div class="songLMain listtipbar">播放器加载失败，请刷新网页</div></li>
+
+								<li class="songList"></li>
+								<script type="text/javascript" src="js/ajaxList.js"></script>
+							</ul>
+						</div>
+					</div>
+			<div class="playFt">
+				<div class="track">
+					<div class="uiCheck">
+					<input class="checkAll" type="checkbox" select="0">
+					</div>
+					<div class="uiItem">
+						<a herf="#" class="itIcon itDele">删除</a>
+					</div>
+
+					<div class="uiItem">
+						<a herf="#" class="itIcon itShou">收藏</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mainOuther">
+			<div class="albumCover">
+			<a href="#" class="image-light">
+			<img src="http://imge.kugou.com/stdmusic/150/20120719/20120719162409524471.jpg" id="canvas1">
+			</a>
+			</div>
+
+			<div class="albumSale">
+			</div>
+			<div class="lyr"></div>
+		</div>
+		</div>
+</div>
+		<div class="bottom">
+		 <div class="playerWrap">
+		 	<div class="playerCon">
+		 		<a href="#" class="pbtn prevBtn"></a>
+		 		<a href="#" class="pbtn playBtn"></a>
+		 		<a href="#" class="pbtn nextBtn"></a>
+		 	</div>
+		 	<div class="playInfo">
+		 		<div class="trackInfo">
+		 		<a href="#" class="songName"></a>
+		 		<a href="#" class="songPlayer"></a>
+		 		</div>
+
+		 		<div class="playerLength">
+		 			<div class="position">00:00</div>
+		 			<div class="progress">
+		 				<div class="pro1"></div>
+		 				<div class="pro2">
+		 				<a href="#" class="dian"></a>
+		 				</div>
+		 			</div>
+		 			<div class="duration">00:00</div>
+		 		</div>
+
+		 	</div>
+		 	<div class="vol">
+		 		<div class="volm">
+		 		<div class="volSpeaker"></div>
+		 		<div class="volControl">
+		 		<a href="#" class=dian2></a>
+		 	</div>
+		 	</div>
+		 	</div>
+		 </div>
+
+		</div>
+		</div>
+		
+	
+</body>
+
+</html>
